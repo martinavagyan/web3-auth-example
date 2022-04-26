@@ -1,7 +1,7 @@
 import { useWallet } from '@solana/wallet-adapter-react';
 import React, { useEffect, useState } from 'react';
 import base58 from 'bs58';
-import { apiRequest } from '../api';
+import { apiRequest } from '../mockApi';
 import { getAuthenticateMessage, isExpired } from '../common';
 import { getJwtLocalStorage, removeJwtLocalStorage, setJwtLocalStorage } from './localStorageService';
 

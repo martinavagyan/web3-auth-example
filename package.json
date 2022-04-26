@@ -1,8 +1,8 @@
 {
-    "name": "@solana/wallet-adapter-react-ui-starter",
-    "version": "0.9.3",
-    "author": "Solana Maintainers <maintainers@solana.foundation>",
-    "repository": "https://github.com/solana-labs/wallet-adapter",
+    "name": "web3-auth-example",
+    "version": "0.0.1",
+    "author": "Martin Avagyan <martinavagyan@gmail.com>",
+    "repository": "https://github.com/martinavagyan/we3-auth-example",
     "license": "Apache-2.0",
     "publishConfig": {
         "access": "public"
