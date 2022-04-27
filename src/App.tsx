@@ -11,6 +11,7 @@ import {
 import { clusterApiUrl } from '@solana/web3.js';
 import React, { FC, ReactNode, useMemo } from 'react';
 import { AuthProvider } from '@heliofi/web3-auth-ui';
+import { AuthPayload } from '@heliofi/web3-auth-common';
 
 export const App: FC = () => {
   return (
@@ -36,13 +37,27 @@ const Context: FC<{ children: ReactNode }> = ({ children }) => {
     [network]
   );
 
+  const getToken = async (payload: AuthPayload): Promise<string> => {
+    try {
+      const body = JSON.stringify(payload);
+      console.log(body);
+      const res = await fetch('https://test.api.hel.io/connect', {
+        method: 'POST',
+        body,
+      });
+      const { token } = await res.json();
+      return token;
+    } catch (e) {
+      console.error(e);
+      return '';
+    }
+  };
+
   return (
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
-          <AuthProvider apiRequest={(...args) => Promise.resolve('token') /*API callBack goes here*/}>
-            {children}
-          </AuthProvider>
+          <AuthProvider apiRequest={getToken}>{children}</AuthProvider>
         </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>

@@ -87,19 +87,19 @@
     tweetnacl "^1.0.3"
     typescript "^4.5.4"
 
-"@heliofi/web3-auth-ui@/Users/martinavagyan/Desktop/Work/Helio/projects/web3-auth/packages/ui":
-  version "0.0.1"
+"@heliofi/web3-auth-common@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@heliofi/web3-auth-common/-/web3-auth-common-0.0.5.tgz#5c88116a9dd8508d4edc0beb428c8b566f9a0f0a"
+  integrity sha512-OZZ2Auw5JsShLSneuv4LVs+5OReMClpQe+KsNJJJkEHscxCquJK+QqvGlw98UTdByL6XPy0eFEJgJsJpfIzFrA==
   dependencies:
-    "@heliofi/web3-auth-common" "*"
-    "@solana/wallet-adapter-react" "^0.15.4"
     bs58 "^5.0.0"
     jsonwebtoken "^8.5.1"
-    parcel "^2.5.0"
-    react "^17.0.0"
-    react-dom "^17.0.0"
+    tweetnacl "^1.0.3"
 
-"@heliofi/web3-auth-ui@file:../web3-auth/packages/ui":
-  version "0.0.1"
+"@heliofi/web3-auth-ui@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@heliofi/web3-auth-ui/-/web3-auth-ui-0.0.5.tgz#264228804be9a88d30328600d729060bdac4b8d7"
+  integrity sha512-l6BETvHWTWpAjPkaKik39nPGuVVGaakIrBVQFKVA6YjMZOtkyZSgBJva+3ivL06zVBVwtmjlOT8/XYhWCSSPFg==
   dependencies:
     "@heliofi/web3-auth-common" "*"
     "@solana/wallet-adapter-react" "^0.15.4"

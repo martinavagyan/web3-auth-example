@@ -29,7 +29,8 @@
         "nuke": "shx rm -rf node_modules yarn.lock"
     },
     "dependencies": {
-        "@heliofi/web3-auth-ui": "/Users/martinavagyan/Desktop/Work/Helio/projects/web3-auth/packages/ui",
+        "@heliofi/web3-auth-common": "^0.0.5",
+        "@heliofi/web3-auth-ui": "^0.0.5",
         "@solana/wallet-adapter-base": "^0.9.4",
         "@solana/wallet-adapter-react": "^0.15.3",
         "@solana/wallet-adapter-react-ui": "^0.9.5",
