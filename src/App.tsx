@@ -11,8 +11,8 @@ import {
 import { clusterApiUrl } from '@solana/web3.js';
 import React, { FC, ReactNode, useMemo } from 'react';
 import { AuthProvider } from '@heliofi/web3-auth-ui';
-import { AuthPayload, getAuthenticatedMessage, validate } from '@heliofi/web3-auth-common';
-import base58 from 'bs58';
+import { AuthPayload, validate } from '@heliofi/web3-auth-common';
+
 import { Profile } from './profile';
 
 export const App: FC = () => {
@@ -39,32 +39,32 @@ const Context: FC<{ children: ReactNode }> = ({ children }) => {
     [network]
   );
 
-  const getToken = async (payload: AuthPayload): Promise<string> => {
-    try {
-      const body = JSON.stringify(payload);
-      console.log(body);
-      console.log('isValid: ', validate(payload));
-      const res = await fetch('https://test.api.hel.io/connect', {
-        method: 'POST',
-        body,
-        headers: {
-          'content-type': 'application/json',
-        },
-      });
-      const { token } = await res.json();
-      console.log(token);
-      return token;
-    } catch (e) {
-      console.error(e);
-      return '';
-    }
-  };
+  // const getToken = async (payload: AuthPayload): Promise<string> => {
+  //   try {
+  //     const body = JSON.stringify(payload);
+  //     console.log(body);
+  //     console.log('isValid: ', validate(payload));
+  //     const res = await fetch('https://test.api.hel.io/connect', {
+  //       method: 'POST',
+  //       body,
+  //       headers: {
+  //         'content-type': 'application/json',
+  //       },
+  //     });
+  //     const { token } = await res.json();
+  //     console.log(token);
+  //     return token;
+  //   } catch (e) {
+  //     console.error(e);
+  //     return '';
+  //   }
+  // };
 
   return (
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
-          <AuthProvider apiRequest={getToken}>
+          <AuthProvider apiUrl={'https://test.api.hel.io/connect'}>
             <div> {children}</div>
             <br />
             <Profile />

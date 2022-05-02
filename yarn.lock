@@ -76,21 +76,27 @@
     "@ethersproject/logger" "^5.6.0"
     hash.js "1.1.7"
 
-"@heliofi/web3-auth-common@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@heliofi/web3-auth-common/-/web3-auth-common-0.0.6.tgz#bd5fba55458a96bab5c7875429882d9abad753c3"
-  integrity sha512-BScGhdNjb3dsPilPXaEry4cNGKTVrKol+mrMwtawQst7COPi6GErPP6ALLTVtGhoppgXOZWh1k+tDM940PBBow==
+"@heliofi/backend-api@^0.0.15":
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/@heliofi/backend-api/-/backend-api-0.0.15.tgz#d8f05ffd23fe21a4d41403e0c2a3f8b385ba96c7"
+  integrity sha512-iVuaEoPVe0gL1k27aPTnW+nMZPPGFJY5whWAwA0hfy0daSYVF/j9Oz3ZeWvzeHIdxMyMgMnEIOvhxscks5Eh0g==
+
+"@heliofi/web3-auth-common@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@heliofi/web3-auth-common/-/web3-auth-common-0.0.7.tgz#8962073fc46577b0f6477a325aab30ab700aa19e"
+  integrity sha512-zOPspZ3do3qdvOeY/pi5DB8ZWmXO0veqVp+RolkZImZOPAtr8MWplrsm6jEdBpCviGkd+xZAas+5ofcxbgwNEQ==
   dependencies:
     bs58 "^5.0.0"
     jsonwebtoken "^8.5.1"
     tweetnacl "^1.0.3"
 
-"@heliofi/web3-auth-ui@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@heliofi/web3-auth-ui/-/web3-auth-ui-0.0.6.tgz#ec20a78565be7057ee6d050098ec5e3e0f718262"
-  integrity sha512-f3tVTOcq7EGybpopSobHJo/Lh9Yrz8MNUJkBepu0eaLmYESYLYJxsIKeVwf9ja7HDeXKr1jGL/wWLPyODlgO0w==
+"@heliofi/web3-auth-ui@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@heliofi/web3-auth-ui/-/web3-auth-ui-0.0.7.tgz#17b59ba1a147aff9cccdbd1517c1611bee12f056"
+  integrity sha512-lTZGB+gU6l00K8Nvkz/Y9CBrd/PFrKgUuXTLHlcJ5m/+P0EZ+T4zCI8qB3dXmX4ZIU1El2OI8hd5auKf3UZruQ==
   dependencies:
-    "@heliofi/web3-auth-common" "^0.0.6"
+    "@heliofi/backend-api" "^0.0.15"
+    "@heliofi/web3-auth-common" "^0.0.7"
     "@solana/wallet-adapter-react" "^0.15.4"
     bs58 "^5.0.0"
     jsonwebtoken "^8.5.1"
