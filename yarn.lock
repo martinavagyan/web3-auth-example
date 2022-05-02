@@ -81,22 +81,22 @@
   resolved "https://registry.yarnpkg.com/@heliofi/backend-api/-/backend-api-0.0.15.tgz#d8f05ffd23fe21a4d41403e0c2a3f8b385ba96c7"
   integrity sha512-iVuaEoPVe0gL1k27aPTnW+nMZPPGFJY5whWAwA0hfy0daSYVF/j9Oz3ZeWvzeHIdxMyMgMnEIOvhxscks5Eh0g==
 
-"@heliofi/web3-auth-common@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@heliofi/web3-auth-common/-/web3-auth-common-0.0.7.tgz#8962073fc46577b0f6477a325aab30ab700aa19e"
-  integrity sha512-zOPspZ3do3qdvOeY/pi5DB8ZWmXO0veqVp+RolkZImZOPAtr8MWplrsm6jEdBpCviGkd+xZAas+5ofcxbgwNEQ==
+"@heliofi/web3-auth-common@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@heliofi/web3-auth-common/-/web3-auth-common-0.0.8.tgz#deed83857b240abc5fe86cd5a2676f250b6420a9"
+  integrity sha512-MwoL1pisUbMduHwj58toWsydqSuWn1Q8+BvlfkAl3qVTFvy83NGDOMfHdk5SMspKOXF3K2nFZFglseQIDJOYxw==
   dependencies:
     bs58 "^5.0.0"
     jsonwebtoken "^8.5.1"
     tweetnacl "^1.0.3"
 
-"@heliofi/web3-auth-ui@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@heliofi/web3-auth-ui/-/web3-auth-ui-0.0.7.tgz#17b59ba1a147aff9cccdbd1517c1611bee12f056"
-  integrity sha512-lTZGB+gU6l00K8Nvkz/Y9CBrd/PFrKgUuXTLHlcJ5m/+P0EZ+T4zCI8qB3dXmX4ZIU1El2OI8hd5auKf3UZruQ==
+"@heliofi/web3-auth-ui@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@heliofi/web3-auth-ui/-/web3-auth-ui-0.0.8.tgz#adf72acf7aabc6d8cbf5d0a0958057f6096909dc"
+  integrity sha512-X4icJWeK33Q2xfd7usyLdXNtxFY31fOuJPVYBFznq/YRZ3MxfSo8cKcQ9XdSSvhfLZw+l71T5uP1CpQ8Cdo4uQ==
   dependencies:
     "@heliofi/backend-api" "^0.0.15"
-    "@heliofi/web3-auth-common" "^0.0.7"
+    "@heliofi/web3-auth-common" "^0.0.8"
     "@solana/wallet-adapter-react" "^0.15.4"
     bs58 "^5.0.0"
     jsonwebtoken "^8.5.1"
@@ -1087,6 +1087,28 @@
     js-sha3 "^0.8.0"
     rpc-websockets "^7.4.2"
     secp256k1 "^4.0.2"
+    superstruct "^0.14.2"
+    tweetnacl "^1.0.0"
+
+"@solana/web3.js@^1.41.3":
+  version "1.41.3"
+  resolved "https://registry.yarnpkg.com/@solana/web3.js/-/web3.js-1.41.3.tgz#77ef4927d533cf67d7adfeee799d5061d75a06ee"
+  integrity sha512-H+zRDh7zpzma8fvA6S16DJY2sDemw4HHU/3WR9kXQG+3jsRtIJxhOD2NAwu1M2JrXoblyE2QYHWneLKDV2Bu6g==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@ethersproject/sha2" "^5.5.0"
+    "@solana/buffer-layout" "^4.0.0"
+    bn.js "^5.0.0"
+    borsh "^0.7.0"
+    bs58 "^4.0.1"
+    buffer "6.0.1"
+    cross-fetch "^3.1.4"
+    fast-stable-stringify "^1.0.0"
+    jayson "^3.4.4"
+    js-sha3 "^0.8.0"
+    rpc-websockets "^7.4.2"
+    secp256k1 "^4.0.2"
+    sinon-chai "^3.7.0"
     superstruct "^0.14.2"
     tweetnacl "^1.0.0"
 
@@ -2435,6 +2457,11 @@ fast-safe-stringify@^2.0.6, fast-safe-stringify@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-2.1.1.tgz#c406a83b6e70d9e35ce3b30a81141df30aeba884"
   integrity sha512-W+KJc2dmILlPplD/H4K9l9LcAHAfPtP6BY84uVLXQ6Evcz9Lcg33Y2z1IVblT6xdY54PXYVHEv+0Wpq8Io6zkA==
+
+fast-stable-stringify@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/fast-stable-stringify/-/fast-stable-stringify-1.0.0.tgz#5c5543462b22aeeefd36d05b34e51c78cb86d313"
+  integrity sha1-XFVDRisiru79NtBbNOUceMuG0xM=
 
 fastq@^1.6.0:
   version "1.13.0"
@@ -3831,6 +3858,11 @@ side-channel@^1.0.4:
     call-bind "^1.0.0"
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
+
+sinon-chai@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/sinon-chai/-/sinon-chai-3.7.0.tgz#cfb7dec1c50990ed18c153f1840721cf13139783"
+  integrity sha512-mf5NURdUaSdnatJx3uhoBOrY9dtL19fiOtAdT1Azxg3+lNJFiuN0uzaU3xX1LeAfL17kHQhTAJgpsfhbMJMY2g==
 
 slash@^3.0.0:
   version "3.0.0"
