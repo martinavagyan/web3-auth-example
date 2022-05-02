@@ -67,6 +67,7 @@ const Context: FC<{ children: ReactNode }> = ({ children }) => {
           <AuthProvider apiUrl={'https://test.api.hel.io/connect'}>
             <div> {children}</div>
             <br />
+            <br />
             <Profile />
           </AuthProvider>
         </WalletModalProvider>
